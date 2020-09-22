@@ -1,0 +1,8 @@
+com\mycompany\bankingappf\model\Transaction.class
+com\mycompany\bankingappf\resources\JavaEE8Resource.class
+com\mycompany\bankingappf\services\CustomerService.class
+com\mycompany\bankingappf\Tester.class
+com\mycompany\bankingappf\JAXRSConfiguration.class
+com\mycompany\bankingappf\model\Account.class
+com\mycompany\bankingappf\model\Customer.class
+com\mycompany\bankingappf\resources\CustomerResource.class

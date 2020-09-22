@@ -1,0 +1,75 @@
+<!DOCTYPE html >
+
+<html>
+
+<body>
+
+<form action ="http://localhost:49000/api/banking/guiLogIn" method ="get" id ="form1" target="_blank">Email:<br> 
+ <input type = "text" name = "email" id="clearEmail"> 
+<br>Password<br><input type="text" name = "password" id="clearPassword"> <br>
+<button type ="submit" form="form1" onsubmit="reset" onclick="myFunction()">Submit</button ><br><br><br>
+Accounts Transfer:<br>
+<br>Account to transfer from:<br>
+<input type = "text" name = "account1" id="clearAccount1"> 
+<br>Account to transfer to:
+<br><input type="text" name = "account2" id="clearAccount2">
+<br>Amount:
+<br><input type="text" name = "amount" id="clearAmount"><br>
+<button type ="submit" form="form1" onclick="myFunction2()">Submit</button >
+<br>
+<br>
+<br>Withdrawals:<br>
+<br>Account to withdraw from:
+<br><input type="text" name = "withdrawalAccount" id="clearWithdrawalAccount">
+<br>Amount of withdrawal:
+<br><input type="text" name = "withdrawalAmount" id="clearWithdrawalAmount"><br>
+<button type ="submit" form="form1" onclick="myFunction3()">Submit</button >
+<br>
+<br>
+
+
+<script>
+    
+    function myFunction() {   
+        document.getElementById('clearAccount1').value = '';
+        document.getElementById('clearAccount2').value = '';
+        document.getElementById('clearAmount').value = '';
+        document.getElementById('clearWithdrawalAccount').value = '';
+        document.getElementById('clearWithdrawalAmount').value = '';
+        document.form1.reset();   
+    }
+    
+    function myFunction2() {   
+        document.getElementById('clearEmail').value = '';
+        document.getElementById('clearPassword').value = '';
+        document.getElementById('clearWithdrawalAccount').value = '';
+        document.getElementById('clearWithdrawalAmount').value = '';
+        document.form1.reset();   
+    }
+    
+     function myFunction3() {   
+        document.getElementById('clearEmail').value = '';
+        document.getElementById('clearPassword').value = '';
+        document.getElementById('clearAccount1').value = '';
+        document.getElementById('clearAccount2').value = '';
+        document.getElementById('clearAmount').value = '';
+        document.form1.reset();   
+    }
+    
+    
+</script>
+
+
+ <input type="reset" value="Reset" />
+</body >
+</html >
+
+<style>
+    body{
+        background-color: #ccccff;
+    }
+    
+</style>
+
+<!DOCTYPE html >
+
